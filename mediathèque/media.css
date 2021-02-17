@@ -1,0 +1,65 @@
+/*
+
+    Global
+
+    */
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+      }
+
+  
+      body {
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: rgba(5, 5, 5, 0.9);
+        background: linear-gradient(to bottom left, rgb(255, 225, 0) 50%, palegoldenrod 50%);
+     
+      }
+
+      .btn{
+        text-align:center;
+        text-decoration: none;
+        font:bold 15px Arial;
+        background:#352a2e;
+        color:#fff;
+        height:3rem;
+        border:none;
+        padding: 1.5rem;
+        width: 8rem;
+        margin-top: 1.5rem;
+        border-radius: 10px;
+    
+    }
+
+    html body div.movies div.film p{
+       display: flex;
+       text-align: center;
+       align-items: center;
+       flex-basis:33%;
+    }
+
+    .dateretour > p:nth-child(2) {
+        font-weight: 1000;
+        color: #1e0c53;
+    }
+    .dateretour > p:nth-child(3) {
+        font-weight: 1000;
+        color: #1e0c53;
+    }
+
+  
+
+    @media (max-width: 767px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 768px) {
+      main {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }

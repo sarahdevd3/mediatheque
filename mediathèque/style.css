@@ -1,0 +1,108 @@
+ /*
+
+    Global
+
+    */
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Ubuntu", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 2rem;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, .9);
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+
+    /*
+
+    Header
+
+    */
+
+    header {
+      background-color: #352a2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      writing-mode: vertical-rl;
+     text-orientation: mixed;
+     width:20vw;
+     font-size:4rem;
+    }
+
+    /*
+
+    Main
+
+    */
+    
+    main {
+      background: linear-gradient(to bottom left, rgb(255, 225, 0) 50%, palegoldenrod 50%);
+      color: rgba(0, 0, 0, .85);
+      display: grid;
+      grid-gap: 2rem;
+      padding: 2rem;
+    }
+    
+
+    @media (max-width: 767px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 768px) {
+      main {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    main > form {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    }
+
+    main > form > * {
+      margin-bottom: 2rem;
+    }
+
+    main > form h1 {
+      text-align: center;
+    }
+
+    main > form input {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    /*
+
+    Footer
+
+    */
+
+    footer {
+      background-color: #1b1a1d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }

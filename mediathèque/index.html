@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>📀 Mediathèque 📀</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+ 
+</head>
+<body>
+
+  <header>
+    <h1>📀 Mediathèque 📀</h1>
+       
+  </header>
+
+  
+
+  <main>
+
+
+    <!-- Ajouter un film -->
+    <form action="media.php" method="post">
+      <h3>Ajouter un film</h3>
+      <input type="text" name="titre" required placeholder="titre">
+      <input type="text" name="acteurs" required placeholder="acteurs">
+      <input type="text" name="realisateur" required placeholder="realisateur"><br /><br />
+      <input type="text" name="synopsis" required placeholder="synopsis">
+      <input type="date" name="datesortiefilm" required placeholder="datesortiefilm">
+        <input type="text" name="affiche" placeholder="lien de l'affiche">
+      <input type="submit" name="create" value="valider">
+    </form>
+
+  <!-- consulter un film -->
+    <form action="media.php" method="post">
+      <h1>Consulter</h1>
+      <input type="number" name="id" required placeholder="Identifiant">
+      <input type="submit" name="read" value="Go!">
+    </form>
+
+        <!-- Editer un film -->
+        <form action="media.php" method="post">
+          <h3>Modifier un film</h3>
+          <input type="number" name="id" required placeholder="identifiant">
+          <input type="text" name="titre"  placeholder="titre">
+          <input type="text" name="acteurs"  placeholder="acteurs">
+          <input type="text" name="realisateur"  placeholder="realisateur"><br /><br />
+          <input type="text" name="synopsis"  placeholder="synopsis">
+          <input type="text" name="affiche" placeholder="lien de l'affiche">
+          <input type="submit" name="update" value="valider">
+        </form>
+
+  <!-- emprunter un film -->
+        <form action="media.php" method="post">
+          <h3>Emprunt et Retour</h3>
+        <input type="number" name="id" required placeholder="identifiant">
+          <input type="text" name="titre"  placeholder="titre">
+          <a>Date d'emprunt</a>
+        <input type="date" name="dateempruntfilm"  placeholder="">
+        <a>Date de retour</a>
+        <input type="date" name="dateretourfilm"  placeholder="">
+        <input type="submit" name="emprunt" value="valider">
+      </form>
+  
+
+          <!-- supprimer un film -->
+    <form action="media.php" method="post">
+      <h1><u>Supprimer</h1>
+        <input type="number" name="id" required placeholder="identifiant">
+      <input type="submit" name="delete" value="Go!">
+    </form>
+
+ 
+
+  </main>
+
+  <footer>
+  
+  </footer>
+  
+</body>
+</html>
