@@ -19,7 +19,7 @@ include"dbconf.php";
 
 try{
   // Connexion à la bdd
-  $db = new PDO('mysql:host=localhost;dbname=mediatheque','cruder','jecrud');
+  $db = new PDO('mysql:host=localhost;dbname=','','');
   $db->exec('SET NAMES "UTF8"');
   //gestion des erreurs//
 } catch (PDOException $e){
